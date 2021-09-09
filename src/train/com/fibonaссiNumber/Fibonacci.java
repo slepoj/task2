@@ -11,7 +11,7 @@ public class Fibonacci {
     private static int fibonacci(int n) {
         int num = 1;
         int num2 = 1;
-        while (num != n) {
+        while (num2 <= n) {
             int buf = num2;
             num2 += num;
             num = buf;

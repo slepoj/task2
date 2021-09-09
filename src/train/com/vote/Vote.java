@@ -9,10 +9,9 @@ public class Vote {
 
     public static int election(int[] arr) {
         int maxv = 0;
-        int pos = 0;
         int v = 0, v2 = 0;
         for (int i = 0; i < arr.length; i++) {
-            for (int j = pos; j < arr.length; j++) {
+            for (int j = i; j < arr.length; j++) {
                 if (arr[i] == arr[j]) {
                     v2++;
                 }
@@ -21,7 +20,6 @@ public class Vote {
                 maxv = arr[i];
                 v = v2;
             }
-            pos++;
             v2 = 0;
         }
         return maxv;
