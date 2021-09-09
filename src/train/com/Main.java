@@ -20,5 +20,6 @@ public class Main {
         SumOfSquares.main(new String[]{"3"});
         SumOfSquares.main(new String[]{"77"});
         SumOfSquares.main(new String[]{"13"});
+        //some comment
     }
 }
